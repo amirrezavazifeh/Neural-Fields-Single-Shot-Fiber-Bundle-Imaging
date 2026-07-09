@@ -48,7 +48,7 @@ The method is validated on both **simulated** and **experimental** fiber bundle 
 **Experimental data:** The method is applied to a resolution-chart image captured through a real fiber bundle imaging setup, with the PSF approximated as a Gaussian (σ = 0.5) since the true PSF was unavailable. The effect of the TV regularization weight λ is explored across `{0.001, 0.01, 0.05, 0.1}` — higher λ yields smoother reconstructions, while lower λ retains high-frequency noise and residual honeycomb patterning. **λ = 0.05** gives the sharpest reconstruction without visible fiber artifacts, resolving Group 7 Element 4 versus Group 7 Element 1 in the raw measurement — a **≈1.41× improvement in resolution**.
 
 <p align="center">
-  <img src="Figures/Resolution_Chart.png" alt="Experimental resolution chart reconstruction" width="900"/>
+  <img src="Figures/Resolution Chart.png" alt="Experimental resolution chart reconstruction" width="900"/>
 </p>
 
 ## Repository Structure
