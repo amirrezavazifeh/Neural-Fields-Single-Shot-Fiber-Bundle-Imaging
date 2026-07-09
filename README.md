@@ -1,13 +1,14 @@
 # Neural Fields for Single-Shot Image Reconstruction in Fiber Bundle Imaging Systems
 Official code for the paper **"Neural Fields for Single-Shot Image Reconstruction in Fiber Bundle Imaging Systems"** by Amir Reza Vazifeh and Jason W. Fleischer (Princeton University).
 ## Overview
-Fiber bundle imaging (used in endoscopy, optical coherence tomography, and cellular imaging) suffers from resolution loss and honeycomb-like sampling artifacts caused by the discrete arrangement of fiber cores. This repository provides an **unsupervised** method that reconstructs a high-resolution scene from a **single** fiber bundle measurement and a known fiber layout, using an implicit neural representation optimized at test time. 
-
+Fiber bundle imaging (used in endoscopy, optical coherence tomography, and cellular imaging) suffers from resolution loss and honeycomb-like sampling artifacts caused by the discrete arrangement of fiber cores. This repository provides an **unsupervised** method that reconstructs a high-resolution scene from a **single** fiber bundle measurement and a known fiber layout, using an implicit neural representation (a coordinate-based network in the spirit of Neural Radiance Fields) optimized at test time — no training data, ground truth, or paired images required.
 ## Method
 Reconstruction is treated as an **inverse problem**. A coordinate-based network $f_\theta$ takes a 2D pixel coordinate $(x, y)$, passed through a positional encoding $\gamma(\cdot)$, and predicts the underlying clean scene intensity:
+
 $$
 G(x, y) = f_\theta\left(\gamma(x, y)\right)
 $$
+
 The predicted scene $G$ is then passed through a differentiable forward model of the fiber bundle imaging system to simulate what the sensor would have captured:
 
 1. **PSF blurring** — $G$ is convolved with the system's (known or assumed) point-spread function.
