@@ -42,13 +42,13 @@ The method is validated on both **simulated** and **experimental** fiber bundle 
 **Simulated data:** A cameraman image is Gaussian-blurred (σ = 1.5) and passed through a known fiber mask. After 25,000 optimization iterations (λ = 0.001), the reconstruction achieves **PSNR / SSIM of 29.03 dB / 0.81**, an improvement of **+18.65 dB / +0.62** over the raw fiber-masked measurement.
 
 <p align="center">
-  <img src="Results/Cameraman.png" alt="Simulated reconstruction result" width="900"/>
+  <img src="Figures/Cameraman.png" alt="Simulated reconstruction result" width="900"/>
 </p>
 
 **Experimental data:** The method is applied to a resolution-chart image captured through a real fiber bundle imaging setup, with the PSF approximated as a Gaussian (σ = 0.5) since the true PSF was unavailable. The effect of the TV regularization weight λ is explored across `{0.001, 0.01, 0.05, 0.1}` — higher λ yields smoother reconstructions, while lower λ retains high-frequency noise and residual honeycomb patterning. **λ = 0.05** gives the sharpest reconstruction without visible fiber artifacts, resolving Group 7 Element 4 versus Group 7 Element 1 in the raw measurement — a **≈1.41× improvement in resolution**.
 
 <p align="center">
-  <img src="Results/Resolution_Chart.png" alt="Experimental resolution chart reconstruction" width="900"/>
+  <img src="Figures/Resolution_Chart.png" alt="Experimental resolution chart reconstruction" width="900"/>
 </p>
 
 ## Repository Structure
