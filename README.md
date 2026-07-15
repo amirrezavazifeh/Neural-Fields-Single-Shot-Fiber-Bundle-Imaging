@@ -1,5 +1,20 @@
-# Neural Fields for Single-Shot Image Reconstruction in Fiber Bundle Imaging Systems
-Official code for the paper **"Neural Fields for Single-Shot Image Reconstruction in Fiber Bundle Imaging Systems"** by Amir Reza Vazifeh and Jason W. Fleischer (Princeton University).
+<div align="center">
+<h1>Neural Fields for Single-Shot Image Reconstruction in Fiber Bundle Imaging Systems</h1>
+<p>
+  <a href="https://www.frontiersinoptics.com/"><img src="https://img.shields.io/badge/Conference-Frontiers_in_Optics_2026-orange?style=flat-square" alt="Frontiers in Optics 2026"></a>
+</p>
+<p>
+  <a href="https://amirrezavazifeh.github.io/">Amir Reza Vazifeh</a><sup>1</sup> &nbsp;·&nbsp;
+  <a href="https://ece.princeton.edu/people/jason-w-fleischer">Jason W. Fleischer</a><sup>1,*</sup>
+</p>
+<p>
+  <sup>1</sup> Department of Electrical and Computer Engineering, Princeton University, Princeton, NJ 08544, USA<br>
+  <sup>*</sup> jasonf@princeton.edu
+</p>
+<p><em>Frontiers in Optics</em>, 2026</p>
+</div>
+
+---
 
 ## Overview
 Fiber bundle imaging (used in endoscopy, optical coherence tomography, and cellular imaging) suffers from resolution loss and honeycomb-like sampling artifacts caused by the discrete arrangement of fiber cores. This repository provides an **unsupervised** method that reconstructs a high-resolution scene from a **single** fiber bundle measurement and a known fiber layout, using an implicit neural representation optimized at test time.
